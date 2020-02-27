@@ -8,8 +8,7 @@
 #R^2 = (x1 + t(x2 - x1))^2 + (y1 + t(y2 - y1))^2 + (z1 + t(z2 - z1))^2
 #R^2 = (x1 + t(x2 - x1) - x0)^2 + (y1 + t(y2 - y1) - y0)^2 + (z1 + t(z2 - z1) - z0)^2
 #R^2 = x0^2 + x1^2 + y0^2 + y1^2 + z0^2 + z1^2 + t^2*x1^2 + t^2*x2^2 + t^2*y1^2 + t^2*y2^2 + t^2*z1^2 + t^2*z2^2 - 2*t*x1^2 - 2*t*y1^2 - 2*t*z1^2 - 2*x0*x1 - 2*y0*y1 - 2*z0*z1 - 2*t*x0*x2 - 2*t*y0*y2 - 2*t*z0*z2 - 2*x1*x2*t^2 - 2*y1*y2*t^2 - 2*z1*z2*t^2 + 2*t*x0*x1 + 2*t*x1*x2 + 2*t*y0*y1 + 2*t*y1*y2 + 2*t*z0*z1 + 2*t*z1*z2
-import math
-import sys
+
 def intersection(t1, t2 , x1, y1,  z1, x2, y2, z2):
     if t1 == None:
         return None, None
